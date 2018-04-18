@@ -5,6 +5,6 @@ const server = require('./server')
 const port = 3000
 
 //
-server.listen( () => {
+server.listen(() => {
 console.log('Server is listening on port', port)
 })
