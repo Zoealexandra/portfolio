@@ -6,7 +6,7 @@
   "author": "Zoealexandra",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon server/index"
   },
   "dependencies": {
     "express": "^4.16.3",

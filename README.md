@@ -1,9 +1,9 @@
-# full-stack-boilerplate
+# Full-stack-boilerplate
 A go-to set up for full stack
 
 This branch is designed with comments throughout the code to provide explanations on the how and why the code exists
 
-#Webpack module bundler
+## Webpack module bundler
 1.  Adding the base webpack module builder
   ```Yarn add webpack```
 
@@ -23,3 +23,20 @@ Add the following to the webpack.config.js
     ]
   }
   ```
+
+  ## Babel
+
+
+
+  ## Reactjs
+
+
+
+  ## Testing
+
+
+
+  ## Knex
+
+
+
