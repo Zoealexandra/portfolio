@@ -1,10 +1,13 @@
 {
   "name": "full-stack-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./server/index.js",
   "repository": "https://github.com/Zoealexandra/full-stack-boilerplate.git",
   "author": "Zoealexandra",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "nodemon": "^1.17.3"
