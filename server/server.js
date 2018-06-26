@@ -8,8 +8,6 @@ const server = express()
 const routes = require('./routes/routes')
 
 //middleware
-
-//
 server.use(express.static(path.join(__dirname, 'public')))
 
 server.use('/', routes)
