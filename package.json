@@ -1,0 +1,32 @@
+{
+  "name": "full-stack-boilerplate",
+  "version": "1.0.0",
+  "main": "./server/index.js",
+  "repository": "https://github.com/Zoealexandra/full-stack-boilerplate.git",
+  "author": "Zoealexandra",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server & yarn build --watch",
+    "build": "webpack --config client/webpack.config.js"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^3.11.0",
+    "webpack-livereload-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
