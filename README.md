@@ -89,7 +89,7 @@ We'll be using the Knex module to talk to our SQLite3 database. (instructions ta
 * Add a migration for the `default` table.
 
   ```sh
-  yarn knex migrate:make todos
+  yarn knex migrate:make default
   ```
 
   1. Edit the new file in the new `migrations` folder so it will add (and drop) a table called `default` with the following fields:
