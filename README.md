@@ -84,7 +84,7 @@ We'll be using the Knex module to talk to our SQLite3 database. (instructions ta
   This introduces a new idea: that we can run an _in-memory database_! This database will only last as long as our tests, and vanishes in a puff of smoke afterwards. Because it is in memory and not on the filesystem, it works extremely quickly and is not vulnerable to any problems that might occur with the filesystem (hard disk full or busy, permissions problems with directories, etc).
 
 
-## Set up the database
+### Set up the database
 
 * Add a migration for the `default` table.
 
