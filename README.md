@@ -104,7 +104,7 @@ We'll be using the Knex module to talk to our SQLite3 database. (instructions ta
 * Add some seed data.
 
   ```sh
-  yarn knex seed:make test-tasks
+  yarn knex seed:make default
   ```
 
   1. Edit the new file in the new `seeds` folder so it will add new tasks to the `default` table.
