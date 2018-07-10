@@ -95,7 +95,7 @@ We'll be using the Knex module to talk to our SQLite3 database. (instructions ta
   1. Edit the new file in the new `migrations` folder so it will add (and drop) a table called `default` with the following fields:
 
       * `id` (auto incrementing)
-      * `task`: string
+      * `name`: string
 
   The documentation for [`createTableIfNotExists`](http://knexjs.org/#Schema-createTableIfNotExists) and [`dropTableIfExists`](http://knexjs.org/#Schema-dropTableIfExists) might be helpful.
 
