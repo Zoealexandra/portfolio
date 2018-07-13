@@ -1,29 +1,23 @@
 import React from 'react'
 
+import Nav from './Nav'
+import Intro from './Intro'
+import Body from './Body'
+import Footer from './Footer'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      example: []
-    }
-  }
-
-  componentDidMount () {
-    this.setState = ({
-      example: ['goose2']
-    })
+    this.state = {}
   }
 
   render () {
     return (
       <div className='app'>
-      <ul>
-        {this.state.example.map(goose => {
-          return (
-            <li key={goose}>{goose}</li>
-          )
-        })}
-      </ul>
+        <Nav />
+        <Intro />
+        <Body />
+        <Footer />
     </div>
     )
   }

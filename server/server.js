@@ -5,12 +5,12 @@ const express = require('express')
 const server = express()
 
 //importing routes data from egroute.js
-const routes = require('./routes/egroute')
+const routes = require('./routes/route')
 
 //middleware
 server.use(express.static(path.join(__dirname, 'public')))
 
-server.use('/api/v1/egroute', routes)
+server.use('/api/v1/route', routes)
 
 
 module.exports = server
