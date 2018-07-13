@@ -2,7 +2,9 @@ import React from 'react'
 
 const Nav = () => (
   <div className='nav'>
-</div>
+    <h1>Zoe Barron</h1>
+    <h2>Projects</h2>
+  </div>
 )
 
 
