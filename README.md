@@ -25,11 +25,16 @@ Add the following to the webpack.config.js
   ```
 
   ## Babel
-
+presets added to package.json
 
 
   ## Reactjs
 
+  add react and react-dom to package.json
+  
+    ```sh
+  yarn knex react react-dom
+  ```
 
 
   ## Testing
