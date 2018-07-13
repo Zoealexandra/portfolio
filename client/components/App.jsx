@@ -17,7 +17,7 @@ class App extends React.Component {
         <Nav />
         <Intro />
         <Body />
-        <Footer />
+        <Footer />``
     </div>
     )
   }
