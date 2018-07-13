@@ -1,8 +1,6 @@
 # Full-stack-boilerplate
 A go-to set up for full stack
 
-This branch is designed with comments throughout the code to provide explanations on the how and why the code exists
-
 ## Webpack module bundler
 1.  Adding the base webpack module builder
   ```Yarn add webpack```
@@ -31,15 +29,10 @@ presets added to package.json
   ## Reactjs
 
   add react and react-dom to package.json
-  
+
     ```sh
   yarn knex react react-dom
   ```
-
-
-  ## Testing
-
-
 
   ## Knex
 
@@ -119,5 +112,6 @@ We'll be using the Knex module to talk to our SQLite3 database. (instructions ta
   2. Run `yarn knex seed:run` to add the new data to the database.
 
 
-
+ ## Testing
+ Jest
 
