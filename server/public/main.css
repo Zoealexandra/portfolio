@@ -1,5 +1,7 @@
 .nav {
-  background-color: #4286f4;
-  color: #ffffff;
-  text-align: center
+  color: rgb(127, 148, 255);
+}
+
+.body {
+  background-color: #fff;
 }

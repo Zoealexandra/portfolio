@@ -1,10 +1,14 @@
 import React from 'react'
 
 const Nav = () => (
-  <div className='nav'>
-    <h1>Zoe Barron</h1>
-    <h2>Projects</h2>
-  </div>
+  <nav className="navbar navbar-light bg-light">
+      <a href="#" className="navbar-brand nav">Zoe Barron</a>
+      <ul className="navbar-nav">
+          <li>
+              <a href="">Projects</a>
+          </li>
+      </ul>
+  </nav>
 )
 
 
