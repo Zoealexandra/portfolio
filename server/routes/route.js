@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 //getting all the projects
 router.get('/projects', (req, res) => {
      dbProjects.getAllProjects()
-        .then(projects => res.json(profiles))
+        .then(projects => res.json(projects))
         .catch(err => {
             res.status(500).json({errorMessage: err.message})
         })
