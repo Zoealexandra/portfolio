@@ -20480,8 +20480,8 @@ var Nav = function Nav() {
         "nav",
         { className: "navbar nav" },
         _react2.default.createElement(
-            "a",
-            { href: "#", className: "nav" },
+            "h1",
+            null,
             "Zoe Barron"
         ),
         _react2.default.createElement(
@@ -20602,7 +20602,7 @@ var Body = function (_React$Component) {
           'div',
           { className: 'row' },
           this.state.projects.map(function (project) {
-            return _react2.default.createElement(_Project2.default, { key: project.name, props: project });
+            return _react2.default.createElement(_Project2.default, { key: project.projectId, props: project });
           })
         )
       );
