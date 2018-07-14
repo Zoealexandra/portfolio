@@ -7,9 +7,7 @@ class Body extends React.Component {
   constructor (props) {
     super (props) 
     this.state = {
-      projects:[
-      {id: 1001, name: 'name 1', description: 'goose', image: '../goose.png', link: 'www.google.com'}
-      ]
+      projects:[]
     }
   }
 
@@ -25,7 +23,7 @@ class Body extends React.Component {
       <div className='Body'>
         {this.state.projects.map(project => {
           return (
-            <Project key={project.id} props={project}/>
+            <Project key={project.name} props={project}/>
           )
         })}
       </div>

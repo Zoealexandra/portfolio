@@ -20565,7 +20565,7 @@ var Body = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Body.__proto__ || Object.getPrototypeOf(Body)).call(this, props));
 
     _this.state = {
-      projects: [{ id: 1001, name: 'name 1', description: 'goose', image: '../goose.png', link: 'www.google.com' }]
+      projects: []
     };
     return _this;
   }
@@ -20586,7 +20586,7 @@ var Body = function (_React$Component) {
         'div',
         { className: 'Body' },
         this.state.projects.map(function (project) {
-          return _react2.default.createElement(_Project2.default, { key: project.id, props: project });
+          return _react2.default.createElement(_Project2.default, { key: project.name, props: project });
         })
       );
     }
@@ -22696,14 +22696,15 @@ var Project = function Project(props) {
     _react2.default.createElement(
       'div',
       { className: 'card', style: divStyle },
-      _react2.default.createElement('img', { className: 'card-img-top', src: props.props.img, alt: 'image of project' }),
+      _react2.default.createElement('img', { className: 'card-img-top', src: 'https://picsum.photos/200/200/?random',
+        alt: 'image of ' + props.props.title }),
       _react2.default.createElement(
         'div',
         { className: 'card-body' },
         _react2.default.createElement(
           'h5',
           { className: 'card-title' },
-          props.props.name
+          props.props.title
         ),
         _react2.default.createElement(
           'p',
