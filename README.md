@@ -4,9 +4,9 @@ This portfolio is to showcase what I've been working on outside of my Enspiral D
 
 
 ## Sprint 1
-[x] Customise my ReactJS boilerplate for use as portfolio
-[x] Set up Database, and add JS to map through project data and display in body of portfolio
-[x] Add Bootstrap for design elements
+- [x] Customise my ReactJS boilerplate for use as portfolio
+- [x] Set up Database, and add JS to map through project data and display in body of portfolio
+- [x] Add Bootstrap for design elements
 
 ## Sprint 2
 - [ ] Server-side coding to add a new project to database - testing with Postman. 
