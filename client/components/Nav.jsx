@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Nav = () => (
-  <nav className="navbar navbar-light bg-light">
-      <a href="#" className="navbar-brand nav">Zoe Barron</a>
+  <nav className="navbar nav">
+      <h1>Zoe Barron</h1>
       <ul className="navbar-nav">
           <li>
               <a href="">Projects</a>

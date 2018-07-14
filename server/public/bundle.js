@@ -20478,10 +20478,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Nav = function Nav() {
     return _react2.default.createElement(
         "nav",
-        { className: "navbar navbar-light bg-light" },
+        { className: "navbar nav" },
         _react2.default.createElement(
-            "a",
-            { href: "#", className: "navbar-brand nav" },
+            "h1",
+            null,
             "Zoe Barron"
         ),
         _react2.default.createElement(
@@ -20524,9 +20524,14 @@ var Intro = function Intro() {
     'div',
     { className: 'intro' },
     _react2.default.createElement(
+      'h3',
+      null,
+      'About Me'
+    ),
+    _react2.default.createElement(
       'p',
       null,
-      'Lorem ipsum'
+      'Initially I trained with a background in Information Systems and Accounting, and chose to retrain as a developer, to immerse myself in an industry that provided better challenges and growth. I\u2019ve practically applied my knowledge during my time retraining at Enspiral Dev Academy, through a number of group projects, including a final project with a real-life application that has a positive social impact. People would describe me as driven and resilient, as well as hard-working and reliable.'
     )
   );
 };
@@ -20597,7 +20602,7 @@ var Body = function (_React$Component) {
           'div',
           { className: 'row' },
           this.state.projects.map(function (project) {
-            return _react2.default.createElement(_Project2.default, { key: project.name, props: project });
+            return _react2.default.createElement(_Project2.default, { key: project.projectId, props: project });
           })
         )
       );
@@ -22753,7 +22758,15 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer() {
-  return _react2.default.createElement('div', { className: 'footer' });
+  return _react2.default.createElement(
+    'div',
+    { className: 'footer' },
+    _react2.default.createElement(
+      'p',
+      null,
+      'Zoe Barron 2018'
+    )
+  );
 };
 
 exports.default = Footer;

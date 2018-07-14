@@ -24,7 +24,7 @@ class Body extends React.Component {
         <div className='row'>
           {this.state.projects.map(project => {
             return (
-              <Project key={project.name} props={project}/>
+              <Project key={project.projectId} props={project}/>
             )
           })}
         </div>
