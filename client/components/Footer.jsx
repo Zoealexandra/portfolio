@@ -2,7 +2,8 @@ import React from 'react'
 
 const Footer = () => (
   <div className='footer'>
-</div>
+  <p>Zoe Barron 2018</p>
+  </div>
 )
 
 

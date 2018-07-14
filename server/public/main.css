@@ -1,7 +1,15 @@
 .nav {
-  color: rgb(127, 148, 255);
+  color: #fff;
+  background-color: grey;
 }
 
-.body {
-  background-color: #fff;
+.project {
+  padding: 2em;
+}
+
+.intro, .footer {
+  padding: 3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: grey;
+  color: #fff;
 }
