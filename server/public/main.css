@@ -14,10 +14,12 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #fff;
   background-color: rgb(192, 192, 192);
+  text-align: center;
 }
 
 .intro, .footer {
   padding: 3em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #fff;
+  text-align: center;
 }
