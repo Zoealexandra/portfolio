@@ -1,22 +1,37 @@
 import React from 'react'
 
-var divStyle = {
-  width: '18em'
-};
+import {getAllProjects} from '../apiClient'
+import Project from './Project'
 
-const Body = () => (
-  <div className='body'>
-  
-    <div className="card" style={divStyle}>
-    <img className="card-img-top" src="" alt="Card image cap" />
-    <div className="card-body">
-      <h5 className="card-title">Card title</h5>
-      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" className="btn btn-primary" /> Go somewhere
-    </div>
-    </div> 
-  </div>
-)
+class Body extends React.Component {
+  constructor (props) {
+    super (props) 
+    this.state = {
+      projects:[
+      {id: 1001, name: 'name 1', description: 'goose', image: '../goose.png', link: 'www.google.com'}
+      ]
+    }
+  }
+
+  componentDidMount () {
+    getAllProjects()
+      .then(projects => {
+        this.setState({projects: projects})
+      })
+  }
+
+  render() {
+    return (
+      <div className='Body'>
+        {this.state.projects.map(project => {
+          return (
+            <Project key={project.id} props={project}/>
+          )
+        })}
+      </div>
+    )
+  }
+}
 
 
 export default Body
