@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(13);
-} else {
   module.exports = __webpack_require__(14);
+} else {
+  module.exports = __webpack_require__(15);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -577,7 +577,7 @@ module.exports = warning;
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(15);
+  var ReactPropTypesSecret = __webpack_require__(16);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -827,7 +827,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(18);
+var isTextNode = __webpack_require__(19);
 
 /*eslint-disable no-bitwise */
 
@@ -861,15 +861,37 @@ module.exports = containsNode;
 "use strict";
 
 
+/**
+ * Check if `obj` is an object.
+ *
+ * @param {Object} obj
+ * @return {Boolean}
+ * @api private
+ */
+
+function isObject(obj) {
+  return null !== obj && 'object' === typeof obj;
+}
+
+module.exports = isObject;
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(25);
+var _App = __webpack_require__(26);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -880,7 +902,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }); // index.js renders react-dom
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -909,7 +931,7 @@ assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default?Z.default:Z;
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2403,7 +2425,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2422,7 +2444,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2460,15 +2482,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(18);
 } else {
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(21);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2715,7 +2737,7 @@ var Ai={default:vi},Bi=Ai&&vi||Ai;module.exports=Bi.default?Bi.default:Bi;
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2730,7 +2752,7 @@ var Ai={default:vi},Bi=Ai&&vi||Ai;module.exports=Bi.default?Bi.default:Bi;
  * @typechecks
  */
 
-var isNode = __webpack_require__(19);
+var isNode = __webpack_require__(20);
 
 /**
  * @param {*} object The object to check.
@@ -2743,7 +2765,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2771,7 +2793,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2803,8 +2825,8 @@ var getActiveElement = __webpack_require__(9);
 var shallowEqual = __webpack_require__(10);
 var containsNode = __webpack_require__(11);
 var emptyObject = __webpack_require__(5);
-var hyphenateStyleName = __webpack_require__(21);
-var camelizeStyleName = __webpack_require__(23);
+var hyphenateStyleName = __webpack_require__(22);
+var camelizeStyleName = __webpack_require__(24);
 
 // Relying on the `invariant()` implementation lets us
 // have preserve the format and params in the www builds.
@@ -20209,7 +20231,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20224,7 +20246,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(22);
+var hyphenate = __webpack_require__(23);
 
 var msPattern = /^ms-/;
 
@@ -20251,7 +20273,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20287,7 +20309,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20302,7 +20324,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(24);
+var camelize = __webpack_require__(25);
 
 var msPattern = /^-ms-/;
 
@@ -20330,7 +20352,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20365,7 +20387,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20381,19 +20403,19 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Nav = __webpack_require__(26);
+var _Nav = __webpack_require__(27);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _Intro = __webpack_require__(27);
+var _Intro = __webpack_require__(28);
 
 var _Intro2 = _interopRequireDefault(_Intro);
 
-var _Body = __webpack_require__(28);
+var _Body = __webpack_require__(29);
 
 var _Body2 = _interopRequireDefault(_Body);
 
-var _Footer = __webpack_require__(29);
+var _Footer = __webpack_require__(38);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -20437,7 +20459,7 @@ var App = function (_React$Component) {
 exports.default = App;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20473,7 +20495,7 @@ var Nav = function Nav() {
 exports.default = Nav;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20504,7 +20526,7 @@ var Intro = function Intro() {
 exports.default = Intro;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20520,9 +20542,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _apiClient = __webpack_require__(31);
+var _apiClient = __webpack_require__(30);
 
-var _Project = __webpack_require__(38);
+var _Project = __webpack_require__(37);
 
 var _Project2 = _interopRequireDefault(_Project);
 
@@ -20576,52 +20598,7 @@ var Body = function (_React$Component) {
 exports.default = Body;
 
 /***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Footer = function Footer() {
-  return _react2.default.createElement('div', { className: 'footer' });
-};
-
-exports.default = Footer;
-
-/***/ }),
 /* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Check if `obj` is an object.
- *
- * @param {Object} obj
- * @return {Boolean}
- * @api private
- */
-
-function isObject(obj) {
-  return null !== obj && 'object' === typeof obj;
-}
-
-module.exports = isObject;
-
-
-/***/ }),
-/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20633,7 +20610,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.PROJECT_ROUTE = exports.BASE_ROUTE = undefined;
 exports.getAllProjects = getAllProjects;
 
-var _superagent = __webpack_require__(32);
+var _superagent = __webpack_require__(31);
 
 var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -20649,7 +20626,7 @@ function getAllProjects() {
 }
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -20666,11 +20643,11 @@ if (typeof window !== 'undefined') { // Browser window
   root = this;
 }
 
-var Emitter = __webpack_require__(33);
-var RequestBase = __webpack_require__(34);
-var isObject = __webpack_require__(30);
-var ResponseBase = __webpack_require__(35);
-var Agent = __webpack_require__(37);
+var Emitter = __webpack_require__(32);
+var RequestBase = __webpack_require__(33);
+var isObject = __webpack_require__(12);
+var ResponseBase = __webpack_require__(34);
+var Agent = __webpack_require__(36);
 
 /**
  * Noop.
@@ -21575,7 +21552,7 @@ request.put = function(url, data, fn) {
 
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -21744,7 +21721,7 @@ Emitter.prototype.hasListeners = function(event){
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21753,7 +21730,7 @@ Emitter.prototype.hasListeners = function(event){
 /**
  * Module of mixed-in functions shared between node and client code
  */
-var isObject = __webpack_require__(30);
+var isObject = __webpack_require__(12);
 
 /**
  * Expose `RequestBase`.
@@ -22445,7 +22422,7 @@ RequestBase.prototype._setTimeouts = function() {
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22455,7 +22432,7 @@ RequestBase.prototype._setTimeouts = function() {
  * Module dependencies.
  */
 
-var utils = __webpack_require__(36);
+var utils = __webpack_require__(35);
 
 /**
  * Expose `ResponseBase`.
@@ -22588,7 +22565,7 @@ ResponseBase.prototype._setStatusProperties = function(status){
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22666,7 +22643,7 @@ exports.cleanHeader = function(header, changesOrigin){
 
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports) {
 
 function Agent() {
@@ -22692,7 +22669,7 @@ module.exports = Agent;
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22719,28 +22696,52 @@ var Project = function Project(props) {
     _react2.default.createElement(
       'div',
       { className: 'card', style: divStyle },
-      _react2.default.createElement('img', { className: 'card-img-top', src: '', alt: 'Card image cap' }),
+      _react2.default.createElement('img', { className: 'card-img-top', src: props.props.img, alt: 'image of project' }),
       _react2.default.createElement(
         'div',
         { className: 'card-body' },
         _react2.default.createElement(
           'h5',
           { className: 'card-title' },
-          'Card title'
+          props.props.name
         ),
         _react2.default.createElement(
           'p',
           { className: 'card-text' },
-          'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+          props.props.description
         ),
-        _react2.default.createElement('a', { href: '#', className: 'btn btn-primary' }),
-        ' Go somewhere'
+        _react2.default.createElement('a', { href: props.props.link, className: 'btn btn-primary' }),
+        ' ',
+        props.props.link
       )
     )
   );
 };
 
 exports.default = Project;
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return _react2.default.createElement('div', { className: 'footer' });
+};
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
