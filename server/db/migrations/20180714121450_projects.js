@@ -9,5 +9,5 @@ exports.up = (knex, Promise) => {
 }
 
 exports.down = (knex, Promise) => {
-  return knex.schema.dropTable('default')
+  return knex.schema.dropTable('projects')
 }

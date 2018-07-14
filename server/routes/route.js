@@ -2,7 +2,9 @@ const express = require('express')
 
 const router = express.Router()
 
-const dbProjects = require('../projects')
+const dbProjects = require('../db/projects')
+
+router.use(express.json())
 
 
 //setting up a home route
@@ -13,9 +15,7 @@ router.get('/', (req, res) => {
 //getting all the projects
 router.get('/projects', (req, res) => {
      dbProjects.getAllProjects()
-        .then(projectsList => {
-            return projectsList
-        })
+        .then(projects => res.json(profiles))
         .catch(err => {
             res.status(500).json({errorMessage: err.message})
         })
