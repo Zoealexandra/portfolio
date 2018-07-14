@@ -20584,10 +20584,14 @@ var Body = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'Body' },
-        this.state.projects.map(function (project) {
-          return _react2.default.createElement(_Project2.default, { key: project.name, props: project });
-        })
+        { className: 'body container-fluid' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          this.state.projects.map(function (project) {
+            return _react2.default.createElement(_Project2.default, { key: project.name, props: project });
+          })
+        )
       );
     }
   }]);
@@ -22692,7 +22696,7 @@ var divStyle = {
 var Project = function Project(props) {
   return _react2.default.createElement(
     'div',
-    { className: 'project' },
+    { className: 'project col-sm' },
     _react2.default.createElement(
       'div',
       { className: 'card', style: divStyle },
@@ -22711,9 +22715,11 @@ var Project = function Project(props) {
           { className: 'card-text' },
           props.props.description
         ),
-        _react2.default.createElement('a', { href: props.props.link, className: 'btn btn-primary' }),
-        ' ',
-        props.props.link
+        _react2.default.createElement(
+          'a',
+          { href: props.props.link, className: 'btn btn-primary' },
+          props.props.link
+        )
       )
     )
   );

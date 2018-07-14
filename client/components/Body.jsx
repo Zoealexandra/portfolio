@@ -20,12 +20,14 @@ class Body extends React.Component {
 
   render() {
     return (
-      <div className='Body'>
-        {this.state.projects.map(project => {
-          return (
-            <Project key={project.name} props={project}/>
-          )
-        })}
+      <div className='body container-fluid'>
+        <div className='row'>
+          {this.state.projects.map(project => {
+            return (
+              <Project key={project.name} props={project}/>
+            )
+          })}
+        </div>
       </div>
     )
   }
