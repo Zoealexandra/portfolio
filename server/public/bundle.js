@@ -20490,7 +20490,15 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Intro = function Intro() {
-  return _react2.default.createElement('div', { className: 'intro' });
+  return _react2.default.createElement(
+    'div',
+    { className: 'intro' },
+    _react2.default.createElement(
+      'p',
+      null,
+      'Lorem ipsum'
+    )
+  );
 };
 
 exports.default = Intro;
@@ -20512,8 +20520,36 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var divStyle = {
+  width: '18em'
+};
+
 var Body = function Body() {
-  return _react2.default.createElement('div', { className: 'body' });
+  return _react2.default.createElement(
+    'div',
+    { className: 'body' },
+    _react2.default.createElement(
+      'div',
+      { className: 'card', style: divStyle },
+      _react2.default.createElement('img', { className: 'card-img-top', src: '', alt: 'Card image cap' }),
+      _react2.default.createElement(
+        'div',
+        { className: 'card-body' },
+        _react2.default.createElement(
+          'h5',
+          { className: 'card-title' },
+          'Card title'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'card-text' },
+          'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+        ),
+        _react2.default.createElement('a', { href: '#', className: 'btn btn-primary' }),
+        ' Go somewhere'
+      )
+    )
+  );
 };
 
 exports.default = Body;
