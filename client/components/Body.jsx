@@ -21,6 +21,7 @@ class Body extends React.Component {
   render() {
     return (
       <div className='body container-fluid'>
+      <h3>Projects</h3>
         <div className='row'>
           {this.state.projects.map(project => {
             return (

@@ -5,7 +5,7 @@ const Nav = () => (
       <h1>Zoe Barron</h1>
       <ul className="navbar-nav">
           <li>
-              <a href="">Projects</a>
+              <p>Projects</p>
           </li>
       </ul>
   </nav>

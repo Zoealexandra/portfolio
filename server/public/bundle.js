@@ -20491,8 +20491,8 @@ var Nav = function Nav() {
                 "li",
                 null,
                 _react2.default.createElement(
-                    "a",
-                    { href: "" },
+                    "p",
+                    null,
                     "Projects"
                 )
             )
@@ -20598,6 +20598,11 @@ var Body = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'body container-fluid' },
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Projects'
+        ),
         _react2.default.createElement(
           'div',
           { className: 'row' },
@@ -22730,7 +22735,7 @@ var Project = function Project(props) {
         ),
         _react2.default.createElement(
           'a',
-          { href: props.props.link, className: 'btn btn-primary' },
+          { href: props.props.link, className: 'btn btn-secondary' },
           props.props.link
         )
       )

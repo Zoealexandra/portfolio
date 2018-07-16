@@ -1,25 +1,35 @@
 body {
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(222, 219, 219);
 }
 
 .nav {
-  color: #fff;
+  color: rgb(164, 164, 164);
 }
 
 .project {
   padding: 2em;
+  align-content: center;
 }
 
-.card-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #fff;
-  background-color: rgb(192, 192, 192);
+.card-body, .body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(164, 164, 164);
+  background-color: rgb(222, 219, 219);
   text-align: center;
 }
 
 .intro, .footer {
   padding: 3em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(164, 164, 164);
   text-align: center;
+}
+
+.card-img-top {
+  border-radius: 50%;
+}
+
+.card {
+  background-color: rgb(222, 219, 219);
+  border: none;
 }

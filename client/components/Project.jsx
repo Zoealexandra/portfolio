@@ -12,7 +12,7 @@ const Project = (props) => (
     <div className="card-body">
       <h5 className="card-title">{props.props.title}</h5>
       <p className="card-text">{props.props.description}</p>
-      <a href={props.props.link} className="btn btn-primary">{props.props.link}</a>
+      <a href={props.props.link} className="btn btn-secondary">{props.props.link}</a>
     </div>
     </div> 
   </div>
