@@ -22,7 +22,7 @@ class Body extends React.Component {
     return (
       <div className='body container-fluid'>
       <h3>Projects</h3>
-        <div className='row'>
+        <div className='row project-row'>
           {this.state.projects.map(project => {
             return (
               <Project key={project.projectId} props={project}/>

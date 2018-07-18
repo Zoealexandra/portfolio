@@ -9,6 +9,12 @@ body {
 .project {
   padding: 2em;
   align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.card-img-top:hover {
+  opacity: 0.6;
 }
 
 .card-body, .body {
@@ -37,5 +43,10 @@ body {
 .avatar {
   border-radius: 50%;
   max-width: 280px;
+  align-content: center;
+  padding: 20px;
+}
+
+.project-row {
   align-content: center;
 }

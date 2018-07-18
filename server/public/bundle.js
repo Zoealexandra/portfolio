@@ -20618,7 +20618,7 @@ var Body = function (_React$Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'row' },
+          { className: 'row project-row' },
           this.state.projects.map(function (project) {
             return _react2.default.createElement(_Project2.default, { key: project.projectId, props: project });
           })
