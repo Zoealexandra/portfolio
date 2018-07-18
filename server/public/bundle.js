@@ -20519,8 +20519,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var avatarImage = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/images/avatar.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 var Intro = function Intro() {
   return _react2.default.createElement(
     'div',
@@ -20535,8 +20533,8 @@ var Intro = function Intro() {
       ),
       _react2.default.createElement(
         'div',
-        { className: 'avatar' },
-        _react2.default.createElement('img', { src: avatarImage, alt: 'avatar image' })
+        { className: 'avatarContainer' },
+        _react2.default.createElement('img', { className: 'avatar', src: '/images/avatar.png', alt: 'avatar image' })
       ),
       _react2.default.createElement(
         'div',

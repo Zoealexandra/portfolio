@@ -33,3 +33,9 @@ body {
   background-color: rgb(222, 219, 219);
   border: none;
 }
+
+.avatar {
+  border-radius: 50%;
+  max-width: 280px;
+  align-content: center;
+}
