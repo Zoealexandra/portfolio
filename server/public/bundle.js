@@ -20519,19 +20519,34 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var avatarImage = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/images/avatar.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 var Intro = function Intro() {
   return _react2.default.createElement(
     'div',
     { className: 'intro' },
     _react2.default.createElement(
-      'h3',
-      null,
-      'About Me'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'Initially I trained with a background in Information Systems and Accounting, and chose to retrain as a developer, to immerse myself in an industry that provided better challenges and growth. I\u2019ve practically applied my knowledge during my time retraining at Enspiral Dev Academy, through a number of group projects, including a final project with a real-life application that has a positive social impact. People would describe me as driven and resilient, as well as hard-working and reliable.'
+      'div',
+      { className: '' },
+      _react2.default.createElement(
+        'h3',
+        null,
+        'About Me'
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'avatar' },
+        _react2.default.createElement('img', { src: avatarImage, alt: 'avatar image' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'intro-text' },
+        _react2.default.createElement(
+          'p',
+          null,
+          'Initially I trained with a background in Information Systems and Accounting, and chose to retrain as a developer, to immerse myself in an industry that provided better challenges and growth. I\u2019ve practically applied my knowledge during my time retraining at Enspiral Dev Academy, through a number of group projects, including a final project with a real-life application that has a positive social impact. People would describe me as driven and resilient, as well as hard-working and reliable.'
+        )
+      )
     )
   );
 };
