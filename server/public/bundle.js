@@ -22783,6 +22783,28 @@ var Footer = function Footer() {
       'p',
       null,
       'Zoe Barron 2018'
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'row' },
+      _react2.default.createElement(
+        'div',
+        { className: 'col-sm' },
+        _react2.default.createElement(
+          'a',
+          { href: 'https://github.com/Zoealexandra' },
+          'Github'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'col-sm' },
+        _react2.default.createElement(
+          'a',
+          { href: 'https://www.linkedin.com/in/zoe-barron-8b30aa84/' },
+          'LinkedIn'
+        )
+      )
     )
   );
 };

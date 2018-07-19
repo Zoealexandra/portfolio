@@ -38,6 +38,7 @@ body {
 .card {
   background-color: rgb(222, 219, 219);
   border: none;
+  margin: 0 auto;
 }
 
 .avatar {
@@ -45,8 +46,4 @@ body {
   max-width: 280px;
   align-content: center;
   padding: 20px;
-}
-
-.project-row {
-  align-content: center;
 }
